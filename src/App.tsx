@@ -1,15 +1,13 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom";
+import {Header} from "./components/header/Header";
+import {Main} from "./components/main/Main";
 
-
-function App() {
+export const App = () => {
     return (
-        <BrowserRouter>
-            <div className="App">
-                xxx
-            </div>
-        </BrowserRouter>
+        <div className="App">
+            <Header/>
+            <Main/>
+        </div>
     );
 }
-
 export default App;
