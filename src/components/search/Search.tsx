@@ -1,16 +1,16 @@
 import React from 'react';
-import {TextField} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import {StyledTextField} from "./styled";
 
 export const Search = () => {
     return (
-        <TextField InputProps={{
+        <StyledTextField InputProps={{
             startAdornment:
                 <SearchIcon
                     style={{cursor: 'pointer'}}
                 />
         }}>
-        </TextField>
+        </StyledTextField>
     );
 };
 
