@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export const Search = () => {
     return (
-        <TextField fullWidth InputProps={{
+        <TextField InputProps={{
             startAdornment:
                 <SearchIcon
                     style={{cursor: 'pointer'}}
