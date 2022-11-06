@@ -1,8 +1,28 @@
 import styled from "@emotion/styled";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 
-
-export const StyledBox = styled(Box)`
+export const StyledFilterBox = styled(Box)`
     display: flex;
     justify-content: space-between;
+`
+export const StyledBlogBox = styled(Box)`
+  display: flex;
+  
+`
+
+export const StyledBlogContentBox = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
+export const StyledBlogTitle = styled(Typography)`
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+`
+export const StyledBlogContent = styled(Box)`
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 `

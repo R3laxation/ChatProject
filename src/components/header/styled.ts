@@ -6,7 +6,6 @@ export const StyledTypography = styled(Typography)`
   font-size: 26px;
   line-height: 36px;
   margin-left: 64px;
-  
 `
 export const StyledBox = styled(Box)`
   width: 100%;

@@ -1,10 +1,8 @@
 import React, {useMemo} from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
 import ListIcon from '@mui/icons-material/List';
 import GridViewIcon from '@mui/icons-material/GridView';
-import {Icon} from "@mui/material";
 import {StyledBox} from "./styled";
 
 const tabs = [
