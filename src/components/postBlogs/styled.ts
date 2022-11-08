@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
-import {Box, Typography} from "@mui/material";
+import {Box, Button, Typography} from "@mui/material";
 
 export const StyledFilterBox = styled(Box)`
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `
 export const StyledBlogBox = styled(Box)`
   display: flex;
@@ -16,6 +16,10 @@ export const StyledBlogContentBox = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  margin-left: 12px;
+
 `
 
 export const StyledBlogTitle = styled(Typography)`
@@ -34,7 +38,22 @@ export const StyledPostBlogsContainer = styled(Box)`
   width: 50%;
 `
 export const StyledTitleTypography = styled(Typography)`
-    padding-bottom: 7px;
-    border-bottom: 1px solid #DEDBDC;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #DEDBDC;
   margin-bottom: 23px;
+`
+
+export const StyledShowMoreBlock = styled(Box)`
+  margin-top: 48px;
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const StyledShowMoreButton = styled(Button)`
+  gap: 10px;
+  width: 153px;
+  height: 36px;
+  text-transform: capitalize;
 `

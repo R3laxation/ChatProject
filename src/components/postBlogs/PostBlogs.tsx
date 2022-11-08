@@ -8,11 +8,10 @@ import {
     StyledBlogContentBox,
     StyledBlogTitle,
     StyledFilterBox,
-    StyledPostBlogsContainer
+    StyledPostBlogsContainer,
+    StyledShowMoreBlock, StyledShowMoreButton
 } from "./styled";
-import {Box} from "@mui/material";
 import circle from '../../assets/images/Circle.png';
-
 
 const blogs = [
     {
@@ -57,7 +56,7 @@ const blogs = [
 export const PostsBlogs = () => {
 
     const generatedPosts = useMemo(() => {
-        return blogs.map(({id,blogCover, title, description}) => (
+        return blogs.map(({id, blogCover, title, description}) => (
             <StyledBlogBox key={id}>
                 <img src={blogCover} alt="block-cover"/>
                 <StyledBlogContentBox>
@@ -76,6 +75,9 @@ export const PostsBlogs = () => {
                 <SelectComponent/>
             </StyledFilterBox>
             {generatedPosts}
+            <StyledShowMoreBlock>
+                <StyledShowMoreButton variant="outlined" color={"inherit"}>Show more</StyledShowMoreButton>
+            </StyledShowMoreBlock>
         </StyledPostBlogsContainer>
     );
 };
