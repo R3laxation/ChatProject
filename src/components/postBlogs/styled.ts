@@ -7,7 +7,9 @@ export const StyledFilterBox = styled(Box)`
 `
 export const StyledBlogBox = styled(Box)`
   display: flex;
-  
+  padding-top: 12px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #DEDBDC;
 `
 
 export const StyledBlogContentBox = styled(Box)`

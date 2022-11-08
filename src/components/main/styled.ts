@@ -3,5 +3,4 @@ import styled from "@emotion/styled";
 
 export const StyledBox = styled(Box)`
   display: flex;
-  align-items: center;
 `
