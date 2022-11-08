@@ -2,7 +2,14 @@ import React, {useMemo} from 'react';
 import {PostBlogsTitle} from "./postsBlogsTitle/PostBlogsTitle";
 import {Search} from "../search/Search";
 import {SelectComponent} from "../select/Select";
-import {StyledBlogBox, StyledBlogContent, StyledBlogContentBox, StyledBlogTitle, StyledFilterBox} from "./styled";
+import {
+    StyledBlogBox,
+    StyledBlogContent,
+    StyledBlogContentBox,
+    StyledBlogTitle,
+    StyledFilterBox,
+    StyledPostBlogsContainer
+} from "./styled";
 import {Box} from "@mui/material";
 import circle from '../../assets/images/Circle.png';
 
@@ -47,7 +54,7 @@ const blogs = [
 ];
 
 
-export const PostBlogs = () => {
+export const PostsBlogs = () => {
 
     const generatedPosts = useMemo(() => {
         return blogs.map(({id,blogCover, title, description}) => (
@@ -62,14 +69,14 @@ export const PostBlogs = () => {
     }, [blogs]);
 
     return (
-        <Box style={{width: '50%'}}>
+        <StyledPostBlogsContainer>
             <PostBlogsTitle/>
             <StyledFilterBox>
                 <Search/>
                 <SelectComponent/>
             </StyledFilterBox>
             {generatedPosts}
-        </Box>
+        </StyledPostBlogsContainer>
     );
 };
 

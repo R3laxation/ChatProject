@@ -1,11 +1,9 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {StyledTitleTypography} from "../styled";
 
 export const PostBlogsTitle = () => {
     return (
-        <div>
-            <Typography>Blogs</Typography>
-        </div>
+            <StyledTitleTypography>Blogs</StyledTitleTypography>
     );
 };
 

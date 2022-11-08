@@ -10,7 +10,7 @@ export const StyledTypography = styled(Typography)`
 export const StyledBox = styled(Box)`
   width: 100%;
   height: 60px;
-  border: 1px solid red;
+  border: 1px solid #FCFBFB;
   display: flex;
   align-items: center;
 `

@@ -28,3 +28,13 @@ export const StyledBlogContent = styled(Box)`
   font-size: 14px;
   line-height: 24px;
 `
+export const StyledPostBlogsContainer = styled(Box)`
+  margin-left: 24px;
+  padding-top: 29px;
+  width: 50%;
+`
+export const StyledTitleTypography = styled(Typography)`
+    padding-bottom: 7px;
+    border-bottom: 1px solid #DEDBDC;
+  margin-bottom: 23px;
+`
