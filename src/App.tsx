@@ -1,13 +1,19 @@
 import React from 'react';
-import {Header} from "./components/header/Header";
+import {Route, Routes} from "react-router-dom";
+import {MainLayout} from "./layouts/MainLayout";
 import {Main} from "./components/main/Main";
 
 export const App = () => {
     return (
-        <div className="App">
-            <Header/>
-            <Main/>
+        <div>
+            <Routes>
+               <Route path={'/'} element={<MainLayout/>}>
+                   <Route index element={<Main/>}/>
+               </Route>
+            </Routes>
         </div>
+
+
     );
 }
 export default App;
