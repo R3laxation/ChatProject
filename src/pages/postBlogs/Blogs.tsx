@@ -7,7 +7,7 @@ import {
     StyledBlogContent,
     StyledBlogContentBox,
     StyledBlogTitle,
-    StyledFilterBox,
+    StyledFilterBox, StyledLink,
     StyledPostBlogsContainer,
     StyledShowMoreBlock, StyledShowMoreButton
 } from "./styled";
@@ -62,9 +62,9 @@ export const Blogs = () => {
                 <img src={blogCover} alt="block-cover"/>
                 <StyledBlogContentBox>
                     <StyledBlogTitle>{title}</StyledBlogTitle>
-                    <Link to={`/blog/${id}`}>
+                    <StyledLink to={`/blog/${id}`}>
                         <StyledBlogContent>{description}</StyledBlogContent>
-                    </Link>
+                    </StyledLink>
                 </StyledBlogContentBox>
             </StyledBlogBox>
         ))

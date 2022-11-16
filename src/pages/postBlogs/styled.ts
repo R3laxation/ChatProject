@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import {Box, Button, Typography} from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const StyledFilterBox = styled(Box)`
   display: flex;
@@ -19,7 +20,7 @@ export const StyledBlogContentBox = styled(Box)`
   padding-top: 5px;
   padding-bottom: 40px;
   margin-left: 12px;
-
+  text-decoration: none;
 `
 
 export const StyledBlogTitle = styled(Typography)`
@@ -56,4 +57,9 @@ export const StyledShowMoreButton = styled(Button)`
   width: 153px;
   height: 36px;
   text-transform: capitalize;
+`
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: #1A1718;
 `
