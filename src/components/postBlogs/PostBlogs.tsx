@@ -12,6 +12,7 @@ import {
     StyledShowMoreBlock, StyledShowMoreButton
 } from "./styled";
 import circle from '../../assets/images/Circle.png';
+import {Link} from "react-router-dom";
 
 const blogs = [
     {
@@ -61,7 +62,9 @@ export const PostsBlogs = () => {
                 <img src={blogCover} alt="block-cover"/>
                 <StyledBlogContentBox>
                     <StyledBlogTitle>{title}</StyledBlogTitle>
-                    <StyledBlogContent>{description}</StyledBlogContent>
+                    <Link to={`/blog/${id}`}>
+                        <StyledBlogContent>{description}</StyledBlogContent>
+                    </Link>
                 </StyledBlogContentBox>
             </StyledBlogBox>
         ))
