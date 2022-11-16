@@ -1,10 +1,11 @@
 import React from 'react';
-import {PostsBlogs} from "../postBlogs/PostBlogs";
+import {Blogs} from "../postBlogs/Blogs";
+
 
 export const Main = () => {
     return (
         <>
-            <PostsBlogs/>
+            <Blogs/>
         </>
     );
 };

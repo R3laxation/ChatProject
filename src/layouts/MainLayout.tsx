@@ -8,7 +8,6 @@ export const MainLayout = () => {
     return (
         <>
             <Header/>
-
             <StyledBox>
                 <Sidebar/>
                 <Outlet/>

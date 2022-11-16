@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
-import {PostBlogsTitle} from "./postsBlogsTitle/PostBlogsTitle";
-import {Search} from "../search/Search";
-import {SelectComponent} from "../select/Select";
+import {BlogsTitle} from "./postsBlogsTitle/BlogsTitle";
+import {Search} from "../../components/search/Search";
+import {SelectComponent} from "../../components/select/Select";
 import {
     StyledBlogBox,
     StyledBlogContent,
@@ -54,7 +54,7 @@ const blogs = [
 ];
 
 
-export const PostsBlogs = () => {
+export const Blogs = () => {
 
     const generatedPosts = useMemo(() => {
         return blogs.map(({id, blogCover, title, description}) => (
@@ -72,7 +72,7 @@ export const PostsBlogs = () => {
 
     return (
         <StyledPostBlogsContainer>
-            <PostBlogsTitle/>
+            <BlogsTitle/>
             <StyledFilterBox>
                 <Search/>
                 <SelectComponent/>
